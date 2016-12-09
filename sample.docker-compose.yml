@@ -1,0 +1,12 @@
+postgres:
+    image: postgres:9.6
+    container_name: postgres
+    volumes:
+        - {app root}/data:/var/lib/postgresql/data
+        - {app root}/dumpall:/dumpall
+    ports:
+        - "5432:5432"
+    environment:
+        POSTGRES_PASSWORD: me
+        POSTGRES_USER: secret
+        PGDATA: /var/lib/postgresql/data

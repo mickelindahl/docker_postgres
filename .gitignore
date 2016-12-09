@@ -1,0 +1,12 @@
+# Ignore docker-compose file
+docker-compose.yml
+
+# Ignore cert directory
+certs/
+
+# Ignore certbot log files
+certbot*
+
+# Data and dumpall directories files
+data*
+dumpall*
