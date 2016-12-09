@@ -2,9 +2,13 @@
 
 Postgres database with docker image from https://hub.docker.com/_/postgres/.
 
+From app directory run `mkdir data` and `mkdir dumpall`
+
 Copy `sample.docker-compose.yml` to `docker-compose.yml`. 
 Open `docker-compose.yml` and set postgres version, volumes for data and
-dumpfiles as well as user and password.. 
+dumpfiles as well as user and password (NOTE if you want to change
+password for user initally created one need to do with psql or delete
+the database if there is no important suff in it). 
 
 Run `docker-compose up` -d in app directory to start service.
 
