@@ -12,6 +12,10 @@ the database if there is no important suff in it).
 
 Run `docker-compose up` -d in app directory to start service.
 
+## Usfull stuff
+
+To enter the postgres container type docker exec -i -t postgres /bin/bash
+
 ## Migrate
 To migrate data at major database change e.g. 9.5->9.6 look at
 
