@@ -10,3 +10,6 @@ certbot*
 # Data and dumpall directories files
 data*
 dumpall*
+
+# Not editor stuff
+.idea

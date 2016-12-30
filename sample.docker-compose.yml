@@ -2,8 +2,8 @@ postgres:
     image: postgres:9.6
     container_name: postgres
     volumes:
-        - {app root}/data:/var/lib/postgresql/data
-        - {app root}/dumpall:/dumpall
+        - ./data:/var/lib/postgresql/data
+        - ./dumpall:/dumpall
     ports:
         - "5432:5432"
     environment:
