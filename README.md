@@ -19,6 +19,8 @@ Test if it is working bylogin in as the new user `psql -U {user} -h {host} -p {p
 
 To enter the postgres container type docker exec -i -t postgres /bin/bash
 
+To get container ip adrees (connecting locally to dp OBS use port in container then) `docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id"`
+
 ## Migrate
 To migrate data at major database change e.g. 9.5->9.6 look at
 
